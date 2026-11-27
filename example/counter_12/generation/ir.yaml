@@ -1,0 +1,74 @@
+module:
+  name: counter_12
+  parameters: []
+  ports:
+  - name: rst_n
+    direction: input
+    width: 1
+  - name: clk
+    direction: input
+    width: 1
+  - name: valid_count
+    direction: input
+    width: 1
+  - name: out
+    direction: output
+    width: 4
+
+clock_domains:
+- name: clk
+  clock: clk
+  edge: posedge
+  reset: rst_n
+  reset_polarity: active_low
+  reset_type: asynchronous
+  states:
+  - out
+
+states:
+- name: out
+  type: counter
+  width: 4
+  clock_domain: clk
+  reset_value: "4'b0000"
+  datatype: unsigned
+
+data_model: {}
+
+resources: []
+
+derived_signals: []
+
+transitions:
+- name: reset_update
+  clock_domain: clk
+  trigger: posedge clk
+  guard: "!rst_n"
+  action: "out = 4'b0000"
+  latency: 0
+  transition_type: sequential
+  update_semantics: non_blocking
+- name: count_update
+  clock_domain: clk
+  trigger: posedge clk
+  guard: "rst_n"
+  action: "out = valid_count ? ((out == 4'd11) ? 4'b0000 : out + 1'b1) : out"
+  latency: 1
+  transition_type: sequential
+  update_semantics: non_blocking
+
+cdc: {}
+
+timing: {}
+
+concurrency:
+  groups: []
+
+sequential_processes:
+- name: counter_ctrl
+  clock_domain: clk
+  transitions: [reset_update, count_update]
+
+priority:
+- higher: reset_update
+  lower: count_update

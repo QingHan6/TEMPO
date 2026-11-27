@@ -1,0 +1,21 @@
+{
+  "checker": "checker2",
+  "scope": "hardware semantic consistency and deterministic normalization",
+  "status": "passed",
+  "valid": true,
+  "checked_at": "2026-09-01T15:51:53.360612+00:00",
+  "input_ir": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/petrinet_ir.yaml",
+  "normalization_count": 0,
+  "normalizations": [],
+  "normalizations_applied": false,
+  "backup_ir": null,
+  "output_drivers": {
+    "out": [
+      "state:out"
+    ]
+  },
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": []
+}

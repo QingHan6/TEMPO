@@ -1,0 +1,51 @@
+{
+  "tool": "verilator",
+  "version": "Verilator 5.047 devel rev vUNKNOWN-built20260416-4fe121e",
+  "status": "passed",
+  "mode": "simulation",
+  "started_at": "2026-09-01T15:51:53.394499+00:00",
+  "rtl": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/generated_rtl.v",
+  "base_rtl": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/generated_rtl.v",
+  "sva": null,
+  "testbenches": [
+    "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/testbench.v"
+  ],
+  "extra_sources": [],
+  "testbench_top": "counter_12_tb",
+  "assertions_enabled": false,
+  "coverage_enabled": false,
+  "working_directory": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12",
+  "build_directory": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/rtl_verilator_build",
+  "temporary_build_directory": null,
+  "compile_log": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/rtl_verilator_compile.log",
+  "simulation_log": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/rtl_verilator_simulation.log",
+  "build_command": [
+    "verilator",
+    "--language",
+    "1800-2017",
+    "--Wno-fatal",
+    "--binary",
+    "--timing",
+    "--top-module",
+    "counter_12_tb",
+    "--Mdir",
+    "generation/rtl_verilator_build",
+    "-o",
+    "rtl_verilator_sim",
+    "generation/rtl_verilator_build/source_0.v",
+    "generation/rtl_verilator_build/source_1.v"
+  ],
+  "compile_returncode": 0,
+  "compile_duration_seconds": 3.786,
+  "executable": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/rtl_verilator_build/rtl_verilator_sim",
+  "error": null,
+  "run_command": [
+    "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/rtl_verilator_build/rtl_verilator_sim"
+  ],
+  "simulation_returncode": 0,
+  "simulation_duration_seconds": 0.003,
+  "failure_marker_detected": false,
+  "failure_markers": [],
+  "assertion_failure_count": 0,
+  "assertion_failures": []
+}

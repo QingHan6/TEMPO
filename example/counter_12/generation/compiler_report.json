@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "input_ir": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/petrinet_ir.yaml",
+  "output_rtl": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/generated_rtl.v",
+  "module": "counter_12",
+  "counts": {
+    "ports": 4,
+    "clock_domains": 1,
+    "states": 1,
+    "transitions": 2,
+    "sequential_processes": 1,
+    "resources": 0,
+    "cdc_crossings": 0
+  },
+  "warnings": []
+}

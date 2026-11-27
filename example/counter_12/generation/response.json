@@ -1,0 +1,18 @@
+{
+  "id": "chatcmpl-8a662916-0232-948d-b21a-c88f3d966b78",
+  "model": "qwen3.6-plus",
+  "usage": {
+    "completion_tokens": 6675,
+    "prompt_tokens": 3732,
+    "total_tokens": 10407,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 6261,
+      "rejected_prediction_tokens": null,
+      "text_tokens": 6675
+    },
+    "prompt_tokens_details": null
+  },
+  "contract_retry": null
+}

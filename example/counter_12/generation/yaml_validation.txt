@@ -1,0 +1,1 @@
+OK: IR is valid YAML.

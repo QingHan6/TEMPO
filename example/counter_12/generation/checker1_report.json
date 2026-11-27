@@ -1,0 +1,22 @@
+{
+  "checker": "checker1",
+  "scope": "deterministically auto-repairable IR format issues only",
+  "status": "passed",
+  "valid": true,
+  "checked_at": "2026-09-01T15:51:53.354293+00:00",
+  "input_ir": "/home/maoshuohe/project/experiment/qwen/RTLLM/Control/Counter/counter_12/generation/petrinet_ir.yaml",
+  "stages": {
+    "initial_parse": "passed",
+    "auto_repair": "not_needed",
+    "final_parse": "passed"
+  },
+  "auto_repair_enabled": true,
+  "repair_count": 0,
+  "repairs_applied": false,
+  "repairs": [],
+  "backup_ir": null,
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": []
+}
